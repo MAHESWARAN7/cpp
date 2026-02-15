@@ -3,7 +3,7 @@ using namespace std;
 int main(){
 
     int phno;
-    const int dob = 2007 ;
+    const int dob = 2006 ;
 
 
     cout << "Hello \a \", World!\" "<< endl;
