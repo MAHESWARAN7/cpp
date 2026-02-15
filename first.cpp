@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
 
-    int phno;
+    int phno=86;
     const int dob = 2007 ;
 
 
