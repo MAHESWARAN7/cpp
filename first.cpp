@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
 int phno= 861032;
-const int dob = 200707;
+const int dob = 20070107;
     
     
 
