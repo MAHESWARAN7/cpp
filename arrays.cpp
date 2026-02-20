@@ -12,7 +12,7 @@ int main(){
 
     cout<<"total items : "<<length<< endl;
 
-    for(string j: veg){
+    for(string j: veg){             // for each loop
         cout<<j<<endl;
     }
 
