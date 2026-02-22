@@ -13,10 +13,10 @@ int main (){
     cout<<"reference: "<<no<<endl;
     cout<<"copy : "<<copyofnum<<endl;
 
-    cout<<"address of age: "<<&age<<endl;              //sohws the physical address of the variable
-    cout<<"address of that varible: "<<ptr<<endl;
-    cout<<"value strored in that address "<<ptr<<": "<<*ptr;
-
+    cout<<"address of age: "<<&age<<endl;              //shows the physical address of the variable
+    cout<<"address of that varible: "<<ptr<<endl;      
+    cout<<"value strored in that address "<<ptr<<": "<<*ptr; //*ptr - de referencing operator
+    
     
 
 }
