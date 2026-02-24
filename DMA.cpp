@@ -16,7 +16,7 @@ int main (){
     
     int* items = new int[num];
     //cout<<"enter nos. :";
-    if(num != 0 && num <0){
+    if(num != 0 ){
         cout<<"enter nos. :";
     for(int i = 0; i<num ; i++){
         cin>>items[i];
@@ -24,6 +24,7 @@ int main (){
      for(int j = 0; j<num ; j++){
         cout<<items[j]<<" ";
     }}
+    
 
     else {
         cout<<"invalid";
