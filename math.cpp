@@ -14,9 +14,10 @@ int main(){
      cout<<log(2)<<endl;
      cout<<ceil(6.4)<<endl;
      cout<<floor(6.4)<<endl;
-     cout<<round(5.5);
+     cout<<round(5.5)<<endl;
+     cout<<abs(5-6);
 
      
-
+return 0;
 
 }
