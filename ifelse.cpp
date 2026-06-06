@@ -5,7 +5,7 @@ int main(){
     int age =13;
     int day =2;
     if(age<18){
-        cout<<"u r child"<<endl;
+        std::cout<<"u r child"<<endl;
     }
     
     else if(age>60){
@@ -55,3 +55,5 @@ do{
 }while(a<=n && false);
 
 }
+
+

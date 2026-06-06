@@ -15,7 +15,7 @@ char letter = 65;
 float cgpa;
 double pi ;
 string name = "mahes waran";
-bool yes = true;
+bool yes = false;
 
 cout<<"enter ur cgpa: ";
 cin>>cgpa;
@@ -25,7 +25,7 @@ cin>>pi;
 cout<<fixed<<setprecision(10);
 
 cout<< "u r cgpa is "<<cgpa<<endl;
-cout<<"value : "<<pi<<endl;
+cout<<"value of pi : "<<pi<<endl;
 
     
 
