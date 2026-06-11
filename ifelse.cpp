@@ -31,7 +31,7 @@ switch(day){
     cout<<"mon"<<endl;
     break;
     case 2:
-    cout<<"tue"<<endl;
+    cout<<"tue"<<endl;      //if there is no break there is a fall through 
     break;
     default:
     cout<<"invalid";
@@ -41,19 +41,26 @@ switch(day){
 
 int n = 10;
 int i = 1;
-int a = 11;
-while( i <=n){
+int a = 1;
+while( i <=n){         // condition
     cout<<"hi\n";
     cout<<i<<endl;
-    i++; // important (updation)
+    i++;                // important (updation)
 }
 
           // do while loop (exit control loop)
 do{
     cout<<"\n"<<a<<endl;
     a++;
-}while(a<=n && false);
+}while(a<=n && true);
+
+
+char c;
+do{
+    cout<<"enter name :";
+    cin>>c;
+    cout<<"u entered : "<<c<<endl;
+}while (c!='q');
 
 }
-
 

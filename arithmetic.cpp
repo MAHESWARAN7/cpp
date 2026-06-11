@@ -15,7 +15,7 @@ int main(){
 
     cout<< "addition: "<<a+b<<endl;
     cout<< "sub: "<<a-b<<endl;
-    cout<< "divide: "<<float(a)/b<<endl;
+    cout<< "divide: "<<float(a)/b<<endl;    // float (a) explicit type conversion 
     cout<< "reminder: "<<a%b<<endl;
     cout<< "a :"<< ++a<<endl;              //pre increment 
     a++;

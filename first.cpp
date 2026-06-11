@@ -17,7 +17,7 @@ double pi ;
 string name = "mahes waran";
 bool yes = false;
 
-cout<<"enter ur cgpa: ";
+cout<<"enter ur cgpa: ";      // << - insertion operator
 cin>>cgpa;
 
 cout<<"enter value of pi : ";
@@ -31,7 +31,7 @@ cout<<"value of pi : "<<pi<<endl;
 
     cout << "Hello \a \", World!\" "<< endl;
     cout<< "i  "<< letter  <<  2026-2007<<" years old"<<endl;
-    std::cout<< "phno is "<<phno << "\n my dob is "<<dob<<"\n i am "<<name<<endl ;
+    std::cout<< "phno is "<<phno << "\n my dob is "<<dob<<"\n i am "<<name<<endl ;  // \n escape sequence 
     cout<<yes;
     
     return 0;

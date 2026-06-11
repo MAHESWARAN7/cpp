@@ -1,100 +1,30 @@
-// #include <iostream>
-// #include <cmath>
-// using namespace std;
-// /* 
-// #include <cstdio>
-// #include <vector>
-// #include <algorithm>
-
-
-// int main() {
-//     int a[3]; 
-//     int  size = sizeof(a)/sizeof(a[0]);
-//     for(int i=0;i<size;i++){
-//         cin>>a[i];
-//     }
-    
-//     for(int j=0;j<size;j++){
-//         cout<<a[j];
-//     }
-//     return 0;
-// }
-// */
-
-// /*int main (){
-//     int n,copy,rev=0;
-//     cin>>n;
-//     if(n<0 || (n%10==0 && n==0)){
-//       return 0;}
-
-//       copy = n;
-
-//       while(copy>0){
-//         rev=rev*10;
-//         rev=rev+(copy%10);
-//         copy /= 10; 
-        
-//       }
-//       cout<<rev;
-
-
-// }*/
-
-// class Solution {
-// public:
-//     bool isPalindrome(int x) {
-
-//         if((x<0)||  (x%10==0 && x!= 0)){
-//             return false;
-//         }
-//         int rev=0;
-
-//         while(x>rev){
-            
-//             rev=rev*10;
-//             rev=rev+(x%10);
-//             x /= 10;
-//             cout << "Step: x is now " << x << " | rev is now " << rev << endl;
-//         }
-//         cout << "Final Check: Does " << x << " == " << rev << "?" << endl;
-//         return (x == rev) || (x == rev / 10);
-        
-//     }
-// };
-
-// int main(){
-    
-//     Solution abc;
-    
-//     int no ;//=1001;
-//     cin>>no;
-
-//     bool ans = abc.isPalindrome(no);
-//     cout<<boolalpha<<ans;
-// }
-
-
-#include <iostream>
-#include <cstdio>
+#include<iostream>
+#include<string>
 using namespace std;
+class con{
+    public:
+    string brand; 
+    float engine ;
+    con(string b,float e){   
+       this-> brand =brand;
+        engine=e;
 
-int main() {
-    // Complete the code.
-    int a,b;
-    cin>>a>>b;
-    string words []={"", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
-    for(int i=a; i<=b ; i++){
-        if ( a>=0 && b<=9){
-            cout<<words[i]<<endl;
-        }
-        else if(i<9){
-            if(i%2==0){
-            cout<<"even"<<endl;
-        }
-        else{
-            cout<<"odd";
-        }
+        cout<<"hi"<<endl;
     }
+
+    ~con(){             // distructor
+        cout<<"bye"<<endl;
     }
-    return 0;
+    
+    
+};
+int main(){
+    con shift("suzuki", 1.2);
+    con copy=shift;
+    shift.brand= "suzuki";
+     shift.engine=1.5;
+    cout<<shift.brand<<endl;
+    cout<<shift.engine<<endl;
+    cout<<copy.brand;
+  
 }

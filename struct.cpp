@@ -2,22 +2,22 @@
 using namespace std;
     struct {              //structure definition
         int no;           //structures members
-        char name ;
+        char name ;       //structures members
 
     }dat,person;                 //structure variable
     
     
-    struct employee{           //named structure
+    struct employee{           //named structure - custom datatype
 
         int num;
         string id ;
 
     };
 
-    enum day{
-        sun,
-        mon,
-        tue
+    enum day{              //a user-defined data type used to assign meaningful names to a set of related integer constants 
+        sun, //0
+        mon, //1
+        tue  //2
     };
 
     
@@ -28,18 +28,23 @@ int main(){
                 person.no=7;
                 
                 employee emp;
-                emp.id="mahes";     
+                emp.id="mahes"; 
+                emp.num=7;    
     
 
 
                 cout<<dat.no<<endl;
                 cout<<dat.name<<endl;
 
+
+
                 cout<<person.no<<endl;
 
                 cout<<emp.id<<endl;
+                cout<<emp.num<<endl;
 
-                day today = tue;
+                day today = sun;
+                if(today == day::sun) cout<<"holiday"<<endl;
                 cout<<today<<endl;
 
 

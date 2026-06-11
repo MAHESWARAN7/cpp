@@ -11,7 +11,7 @@ class Data{
     Data (string name, int age){
         this->name=name;
         this->age=age;
-        cout<<"name "<<name<<" age "<<age<<endl;
+        cout<<"name "<<name<<endl<<"age "<<age<<endl;
     }
     void display(){
         cout<<age<<endl;

@@ -1,50 +1,34 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
-class Students {        // eg: BLUE PRINT 
-     
-    public:            //access specifier
-    
-    int roll;          //atribiutes
-    string name;       //atribiutes
-    // int a;
-    // int b;
-    
-    void show(){
+class student {
+    public:            // access specifier 
+    int roll;          // attributes - variales inside the class 
+    string name;       // attributes - variales inside the class 
+
+    void say(){        //function inside the class
         cout<<"name "<<name<<endl;
         cout<<"roll "<<roll<<endl;
-        
     }
-    void showw(int, string);
-    Students(int a, string b ){
-        
-        
-        cout<<"constuctors"<<endl;
-    }
+    int fun(string, int );        // function decleration 
 
 };
- void Students::showw(int roll, string name){
-        cout<<"namee "<<name<<endl;
-        cout<<"rolll "<<roll<<endl;
-
+    int student::fun(string n, int a){       // function outside the class             // function definition
+        
+        cout<<n<<endl<<a<<endl;
+       // return 0;
+    
     }
 
-int main (){
-    
-    Students nos;     // object -instance
-    nos.name="mahes";
-    nos.roll=7;
-    cout<<nos.name<<endl;
+int main(){
+    student mahes;     // object - instance - data storing space 
+    mahes.name= "maheswaran";
+    mahes.roll=21;
+    cout<<mahes.roll<<endl;
 
-    Students nums;
-    nums.name="waran";
-    nums.roll = 21;
-    cout<<nums.roll<<endl;
+   
+    mahes.say();
 
-    nos.show();
-    nums.show();
-    
-    nos.showw(8,"nmanm");
-    Students con;
-    
+    cout<<mahes.fun("cpp",2);
 }

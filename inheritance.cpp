@@ -1,44 +1,66 @@
 #include <iostream>
 #include <string>
 using namespace std;
-class Parent {                    // 1. parent class
-    //protected :
-    public:
-     int age =52;
-     string name ="dad";
-
-// Parent (int age,string name){
-//         cout<<name<<" "<<age<<endl;
-//      }
-      void display_parent(){
-
-        cout<<name<<" "<<age<<endl;
-     }
+class parent {
+  protected:
+   string name;
+   int age;
+   void display_parent(){
+    cout<<name<<age<<endl;
+   }
+} ;   
+class father {        //base class
+   protected:
+   string name="shanmugam";
+   int age=50;
+   void display_father(){
+    cout<<name<<age<<endl;
+   }
+};       
+class mother {
+  public:
+   string name="jayanthi";
+   int age=44;
+   void display_mother(){
+    cout<<name<<age<<endl;
+   }
+};    
+class child : public father,public mother {   // multiple inheritance   child class- derived class
+  public:
+  string name="mahes";
+   int age=19;
+   void display_child(){
+    cout<<name<<age<<endl;
+   }
+};
+class grandchild1 : child{       // multilevel inheritance (father->child->grandchild)
+  public:
+  void display_grandchild(){
+    display_father();
+    display_child();
+    
+  }
+};
+class grandchild2 : child{      // hierarchical (child->)
+  public:                                           //->grandchild1
+  void display_grandchild2(){                       //->grandchild2
+    display_father();
+    display_mother();
+    display_child();
+    
+  }
 };
 
-class Mother : Parent {
-         public :
-        //  int agee =  44;
-        //  string namee = "mother";
+int main(){
+  // parent p;
+  // p.name="mahes";
+  // p.age=19;
+  // p.display_parent();
+  grandchild2 c;
+  c.display_grandchild2();
 
-          void display_mother(){
-                    cout<<name<<" "<<age<<endl;
-
-         }
-};
-
-int main (){
-    Parent* fa;
-    Parent fam;
-    Mother Queen;
-    fa = &fam;
-    fam.display_parent(); // cant access when Parent class is protected :
-    Queen.display_mother();
-    fa->display_parent();
 }
-
-
-
+   
 /*
 Inheritance - Methods , Atributes
  types -
@@ -47,6 +69,9 @@ Inheritance - Methods , Atributes
  multipe 
  multilevel 
  hierarchical
- hybrid 
+ hybrid      - combination of(single   inheritance 
+                             multipe 
+                             multilevel 
+                             hierarchical)
 
 */

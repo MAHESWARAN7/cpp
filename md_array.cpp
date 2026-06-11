@@ -17,6 +17,6 @@ int main (){
             cout<<arr1[i][j];
         }cout<<endl;
     }
-    cout<<&row; // address of that variable
+        cout<<&row; // address of that variable
 return 0;
 }

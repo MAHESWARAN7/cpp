@@ -15,7 +15,7 @@ int main(){
      cout<<ceil(6.4)<<endl;
      cout<<floor(6.4)<<endl;
      cout<<round(5.5)<<endl;
-     cout<<abs(5-6);
+     cout<<abs(5-11);
 
      
 return 0;

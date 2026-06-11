@@ -24,11 +24,17 @@ int main(){
         for (int j = 1; j<= 6; j++){   //inner loop 
             cout<<k;
         }
-        cout<<endl;
+        cout<<"\n"<<endl;
+     }
+
+
+     cout<<"for (int i:names)"<<endl;
+
+     string fruits []={"apple", "mango", "orange"};
+     for(string k: fruits){
+
+      cout<<k<<endl;
      }
      
     
-    
-
-
 }

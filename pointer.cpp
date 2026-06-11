@@ -15,7 +15,10 @@ int main (){
 
     cout<<"address of age: "<<&age<<endl;              //shows the physical address of the variable
     cout<<"address of that varible: "<<ptr<<endl;      
-    cout<<"value strored in that address "<<ptr<<": "<<*ptr; //*ptr - de referencing operator
+    cout<<"value strored in that address "<<ptr<<": "<<*ptr<<endl; //*ptr - de referencing operator
+
+    *ptr = 100;
+    cout<<age<<endl;
     
     
 
